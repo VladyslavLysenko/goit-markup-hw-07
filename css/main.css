@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Стили общие */
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -12,6 +11,15 @@
   --primary-bg-grey-color: #2F303A;
   --primary-bg-btn-color: #F5F4FA;
   --typical-magrin: 50px;
+}
+
+body {
+  font-family: "Roboto", "Oleo Script", "sans-serif";
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background: var(--primary-bg-white-color);
+  color: var(--primary-text-color);
 }
 
 /* Скидывание стилей */
@@ -36,22 +44,6 @@ img {
   height: auto;
 }
 
-body {
-  font-family: "Roboto", "Oleo Script", "sans-serif";
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  background: var(--primary-bg-white-color);
-  color: var(--primary-text-color);
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 /* Подчеркивание гиперссилок убрал */
 a {
   text-decoration: none;
@@ -74,6 +66,18 @@ a {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+/* Cекции  */
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 /* WebStudio */
@@ -180,11 +184,6 @@ a {
 
 .contact-link:hover .contact-link-icon {
   fill: currentColor;
-}
-
-/* Cекции  */
-.section {
-  padding: 94px 0;
 }
 
 /* footer */
