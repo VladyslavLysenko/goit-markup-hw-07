@@ -1,0 +1,15 @@
+%transition-background {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%background-repeat-position-size {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -30,20 +30,18 @@
 
 
 .project-actions-text {
+    
     position: absolute;
     top: 0;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
     color: var(--text-wh-color);
-    font-size: 18px;
-    line-height: 1.55;
     padding-left: 24px;
     padding-right: 24px;
     background: rgba(33, 150, 243, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
+    @include font (null, 18px, 1.55, null);
 
 }
 
@@ -73,6 +71,8 @@
     letter-spacing: 0.06em;
     color: var(--title-text-color);
     margin-bottom: 4px;
+    @include font (700, 18px, 2, 0.06em);
+    
 }
 
 .project-description {

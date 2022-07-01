@@ -36,10 +36,9 @@
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
+    @extend %flex-center;
+    
 
     &:hover {
         fill: var(--accent-color);
@@ -49,13 +48,10 @@
 
 
 .modal-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
     text-align: center;
-    letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 12px;
+    @include font (700, 20px, 1.15, 0.03em);
 }
 
 .modal-input {
@@ -102,11 +98,9 @@
 
 
 .input-name {
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
     color: #757575;
     margin-bottom: 4px;
+    @include font (null, 12px, 1.16, 0.01em);
 }
 
 
@@ -123,10 +117,7 @@
 }
 
 .modal-textarea::placeholder {
-
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
+    @include font (null, 12px, 1.17, 0.01em);
     color: rgba(117, 117, 117, 0.5);
 }
 
@@ -142,10 +133,8 @@
         border: 2px solid #212121;
         border-radius: 4px;
         margin-right: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         border-radius: 2px;
+        @extend %flex-center;
 
     }
 
