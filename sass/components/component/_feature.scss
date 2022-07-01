@@ -2,22 +2,23 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-}
 
-.feature-item {
-    flex-basis: calc((100% - 90px) / 4);
 
-}
+    .feature-item {
+        flex-basis: calc((100% - 90px) / 4);
 
-.feature-title {
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--title-text-color);
-    margin-bottom: 10px;
+        .feature-title {
+
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--title-text-color);
+            margin-bottom: 10px;
+        }
+    }
 }
 
 
