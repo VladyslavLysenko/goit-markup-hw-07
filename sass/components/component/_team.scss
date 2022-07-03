@@ -4,82 +4,45 @@
 }
 
 
-.teams {
+.team__list {
     display: flex;
     justify-content: center;
+    text-align: center;
     margin-right: -30px;
+    
+   
 }
 
-.team-item {
-    flex-basis: calc((100% - 120px) / 4);
+.team__item {
+    flex-basis: calc((100% - 120px)/4);
     margin-right: 30px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
-.teams.list .title {
+.team__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
     color: var(--title-text-color);
     margin-bottom: 10px;
-    @include font (500, 16px, 1.19, 0.03em);
-}
-
-.teams.list {
-    text-align: center;
-    display: flex;
-}
-
-.team-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.teams .team-icon {
-    @include font (null, 16px, 1.19, 0.03em);
 }
 
 
 
-.team-content {
+.team__text {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.team__wrap {
     padding-top: 30px;
     padding-bottom: 30px;
-}
-
-.team-soc-item {
-    width: 44px;
-    height: 44px;
-}
-
-.team-list-soc.list {
-    @extend %flex-center;
-    margin-top: 16px;
-    gap: 10px;
-}
-
-.team-soc-link:hover,
-.team-soc-link:focus {
-    background-color: var(--accent-color);
-    border-radius: 50px;
-
-}
-
-.team-soc-link:hover .team-icon,
-.team-soc-link:focus .team-icon {
-    fill: #FFFFFF;
-}
-
-
-
-.team-soc-link.link {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    @extend %transition-background;
-    @extend %flex-center;
-
-}
-
-
-.team-icon {
-    fill: #AFB1B8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
