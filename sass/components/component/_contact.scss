@@ -32,11 +32,11 @@
     margin-right: 10px;
     fill: #757575;
 
-    .contact__link:hover &__icon {
-        fill: currentColor;
+
+    .contact__link:hover & {
+      fill: currentColor;
     }
 }
-
 
 
 .contact.list .contact__item:not(:last-child) {

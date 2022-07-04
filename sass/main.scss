@@ -1,12 +1,12 @@
-@import './utils/fonts';
+@import './components/style/fonts';
 @import './utils/vars';
-@import './utils/reset';
-@import './utils/container';
-@import './utils/hidden';
-@import './utils/subcsribe';
-@import './utils/section';
-
-
+@import './utils/mixin';
+@import './utils/placeholder';
+@import './components/component/reset';
+@import './components/component/container';
+@import './components/component/hidden';
+@import './components/component/subcsribe';
+@import './components/component/section';
 @import './components/component/logo';
 @import './components/component/header';
 @import './components/component/nav';
@@ -22,3 +22,4 @@
 @import './components/component/modal';
 @import './components/component/portfolio';
 @import './components/component/project';
+

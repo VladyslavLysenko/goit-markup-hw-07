@@ -1,16 +1,13 @@
 .section {
-    padding: 94px 0;
+    padding-left:0;
+    padding-right:0;
+    @extend %section;
 
     &__title {
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 1.17;
-            letter-spacing: 0.03em;
             color: var(--title-text-color);
             margin-bottom: 50px;
             text-align: center;
-    
-    
+                @include fonts (700, 36px, 1.17, 0.03em);
         }
 }
 

@@ -21,12 +21,9 @@ img {
 
 body {
     font-family: 'Roboto', 'Oleo Script', 'sans-serif';
-
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     background: var(--primary-bg-white-color);
     color: var(--primary-text-color);
+        @include fonts (null, 14px, 1.71, 0.03em);
 
 }
 

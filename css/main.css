@@ -72,6 +72,11 @@
   --typical-magrin: 50px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 p,
 h1,
 h2,
@@ -95,11 +100,11 @@ img {
 
 body {
   font-family: "Roboto", "Oleo Script", "sans-serif";
+  background: var(--primary-bg-white-color);
+  color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  background: var(--primary-bg-white-color);
-  color: var(--primary-text-color);
 }
 
 a {
@@ -150,17 +155,17 @@ a {
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  line-height: 1.88;
-  font-size: 16px;
-  font-weight: 700;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   display: flex;
   padding: 10px 30px;
   color: var(--text-wh-color);
   border: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
   cursor: pointer;
 }
 .subscribe__btn:hover {
@@ -203,16 +208,17 @@ a {
 }
 
 .section {
-  padding: 94px 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .section__title {
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
-  text-align: center;
 }
 
 .work.section {
@@ -220,11 +226,11 @@ a {
 }
 
 .logo {
-  font-family: "Raleway", "Oleo Script", "sans";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  font-family: Raleway, sans-serif;
   margin-right: 93px;
   color: var(--accent-color);
 }
@@ -316,7 +322,7 @@ header {
   margin-right: 10px;
   fill: #757575;
 }
-.contact__link:hover .contact__icon__icon {
+.contact__link:hover .contact__icon {
   fill: currentColor;
 }
 
@@ -336,13 +342,13 @@ header {
 }
 
 .soc__title {
-  font-size: 14px;
-  line-height: 1.14;
   text-transform: uppercase;
   color: var(--text-wh-color);
-  font-weight: 700;
   margin-bottom: 20px;
   margin-top: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .soc__list.list {
@@ -409,10 +415,6 @@ header {
   margin: 0 auto;
 }
 .hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
   color: var(--primary-bg-white-color);
@@ -420,6 +422,10 @@ header {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
 }
 
 .btn:hover {
@@ -428,11 +434,7 @@ header {
 }
 
 .hero__btn {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  font-family: Roboto, sans-serif;
   color: var(--text-wh-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -444,6 +446,10 @@ header {
   padding-right: 32px;
   border: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 
 .close__btn {
@@ -455,10 +461,10 @@ header {
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
 .close__btn:hover {
@@ -466,11 +472,7 @@ header {
 }
 
 .modal__btn {
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  font-family: Roboto, sans-serif;
   color: var(--text-wh-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -485,56 +487,65 @@ header {
   font-weight: 700;
   display: block;
   margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 
 .portfolio__btn {
   display: inline-block;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  font-family: Roboto, sans-serif;
   min-width: 73px;
   border: 0;
   padding: 6px 22px;
   background: #F5F4FA;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio__btn:hover, .portfolio__btn:focus {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+}
+.portfolio__btn:hover, .portfolio__btn:focus {
   color: var(--text-wh-color);
   background: var(--primary-bg-color);
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.portfolio__btn--active {
+  color: var(--text-wh-color);
+  background: var(--primary-bg-color);
 }
 
 .feature__list {
+  gap: 30px;
   display: flex;
   justify-content: center;
-  gap: 30px;
 }
 
 .feature__wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #F5F4FA;
   border-radius: 4px;
   height: 120px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .feature__title {
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--title-text-color);
-  margin-bottom: 10px;
 }
 
 .feature__item {
@@ -565,12 +576,12 @@ header {
   display: flex;
   justify-content: center;
   align-content: center;
-  line-height: 1.14;
-  font-weight: 700;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-wh-color);
   background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
 .team {
@@ -622,14 +633,14 @@ header {
 }
 
 .client__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   width: 100%;
   height: 100%;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .client__link:hover, .client__link:focus {
   border: 1px solid #2196F3;
@@ -737,7 +748,7 @@ header {
 }
 .modal__textarea::placeholder {
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -829,14 +840,14 @@ header {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   height: 100%;
   color: var(--text-wh-color);
-  font-size: 18px;
-  line-height: 1.55;
   padding-left: 24px;
   padding-right: 24px;
   background: rgba(33, 150, 243, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
+  line-height: 1.55;
 }
 .project__link:hover .background__text, .project__link:focus .background__text {
   transform: translateY(0);
@@ -850,16 +861,16 @@ header {
 }
 
 .project-wrap__title {
+  color: var(--title-text-color);
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-text-color);
-  margin-bottom: 4px;
 }
 
 .project-wrap__text {
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
-  color: var(--primary-text-color);
 }/*# sourceMappingURL=main.css.map */

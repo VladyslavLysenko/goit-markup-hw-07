@@ -1,11 +1,9 @@
 .soc__title {
-    font-size: 14px;
-    line-height: 1.14;
     text-transform: uppercase;
     color: var(--text-wh-color);
-    font-weight: 700;
     margin-bottom: 20px;
     margin-top: 12px;
+    @include fonts (700, 14px, 1.14, null);
 }
 
 .soc__list.list {

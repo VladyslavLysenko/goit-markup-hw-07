@@ -37,9 +37,7 @@
 
 
 .team__text {
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+        @include fonts (null, 16px, 1.19, 0.03em);
 }
 
 .team__wrap {

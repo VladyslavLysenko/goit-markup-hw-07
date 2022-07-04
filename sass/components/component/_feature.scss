@@ -1,30 +1,24 @@
 .feature__list {
-    display: flex;
-    justify-content: center;
     gap: 30px;
+    @include flexCenter($type: flex, $main-axis: center, $cross-axis: null);
 
 }
 
 
  .feature__wrap {
-     display: flex;
-     justify-content: center;
-     align-items: center;
+
      background: #F5F4FA;
      border-radius: 4px;
      height: 120px;
      margin-bottom: 30px;
+    @include flexCenter($type: flex, $main-axis: center, $cross-axis: center);
  }
 
  .feature__title {
-
-     font-weight: 700;
-     font-size: 14px;
-     line-height: 1.14;
-     letter-spacing: 0.03em;
      text-transform: uppercase;
      color: var(--title-text-color);
      margin-bottom: 10px;
+    @include fonts (700, 14px, 1.14, 0.03em);
  }
 
    .feature__item {
